@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      MEDIA | Tailored for You
+      MEDIA | What You Want, Before You Know It
     </title>
     <link
       rel="shortcut icon"
@@ -293,13 +293,12 @@
               <h1
                 class="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]"
               >
-                Open-Source Web Template for SaaS, Startup, Apps, and More
+                MEDIA
               </h1>
               <p
                 class="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]"
               >
-                Multidisciplinary Web Template Built with Your Favourite
-                Technology - HTML Bootstrap, Tailwind and React NextJS.
+                What You Want, Before You Know It
               </p>
               <ul
                 class="mb-10 flex flex-wrap items-center justify-center gap-5"
@@ -1655,6 +1654,31 @@
       </div>
     </div>
     <!-- ====== Hero Section End -->
+
+
+    <!-- ==== How It Works Section -->
+    <section id="how-it-works" class="py-16 bg-gray-200">
+      <div class="container">
+        <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
+        <div class="flex justify-center gap-8 flex-wrap"> <!--CONTAINER FOR ALL CONTAINERS-->
+          <div class="flex flex-col items-center text-center p-8 bg-white rounded-lg shadow-lg transition-transform hover:scale-105 w-full md:w-1/3">
+            <div>🎭</div>
+            <h3>Pick a Mood</h3>
+            <p>Choose how you're feeling to get reccomendations.</p>
+            </div>
+            <div class="flex flex-col items-center text-center p-8 bg-white rounded-lg shadow-lg transition-transform hover:scale-105 w-full md:w-1/3">
+              <div>🎯</div>
+              <h3>Get Recommendations</h3>
+              <p>Personalized suggestions for you.</p>
+              </div>
+              <div class="flex flex-col items-center text-center p-8 bg-white rounded-lg shadow-lg transition-transform hover:scale-105 w-full md:w-1/3">
+                <div>🎬</div>
+                <h3>Start Watching</h3>
+                <p>Dive into new favorites.</p>
+                </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ====== Features Section Start -->
     <section class="pb-8 pt-20 dark:bg-dark lg:pb-[70px] lg:pt-[120px]">
@@ -5429,9 +5453,9 @@
     <!-- ====== All Scripts -->
 
     <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- COMMENTED OUT DUE TO SCROLL ISSUE 04/11/25 <script src="assets/js/main.js"></script>
     <script>
-      // ==== for menu scroll
+      /* ==== for menu scroll
       const pageLink = document.querySelectorAll(".ud-menu-scroll");
 
       pageLink.forEach((elem) => {
@@ -5442,7 +5466,7 @@
             offsetTop: 1 - 60,
           });
         });
-      });
+      }); */
 
       // section menu active
       function onScroll(event) {
@@ -5457,6 +5481,7 @@
           const val = currLink.getAttribute("href");
           const refElement = document.querySelector(val);
           const scrollTopMinus = scrollPos + 73;
+          if (!refElement) continue; // ADD THIS LINE
           if (
             refElement.offsetTop <= scrollTopMinus &&
             refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
@@ -5499,6 +5524,6 @@
           },
         },
       });
-    </script>
+    </script> -->
   </body>
 </html>
